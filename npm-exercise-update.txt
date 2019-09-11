@@ -1,0 +1,36 @@
+================================= NPM EXERCISE UPDATES
+
+  1. Install the following dependencies with npm:
+
+    @babel/core
+    @babel/preset-env
+    babel-loader
+    webpack
+    webpack-cli
+
+  2. Use this module in the Webpack config file instead of the version from the curriculum:
+
+    module: {
+      rules: [
+        {
+          test: /\.m?js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env']
+            }
+          }
+        }
+      ]
+    }
+
+
+  3. Instead of "webpack" for the value of "build" in the scipts file, use 
+  "webpack --mode=development"
+
+
+
+CONFIG FILE HAS TO BE CALLED 
+
+===>>>> " webpack.babel.config.js " <<<<=== 
